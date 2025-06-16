@@ -54,36 +54,36 @@ export default function Home() {
       name: 'Global Travels',
       description: 'Flight booking website like ShareTrip/Gozayaan',
       tech: 'Next js, Shadcn/ui, Tailwind, Context api, Github Collaboration',
-      live: '#',
+      live: 'https://globaltravels.vercel.app/',
     },
     {
       name: 'Shoppers',
       description: 'Single vendor ecommerce website',
       tech: 'Express, React, Mongoose, Mantine, Redux, Axios, JWT',
-      live: '#',
-      frontend: '#',
-      backend: '#',
+      live: 'https://single-vendor-ecommerce.vercel.app/',
+      frontend: 'https://github.com/Ekram70/single_vendor_ecommerce',
+      backend: 'https://github.com/Ekram70/single_vendor_backend',
     },
     {
       name: 'Typing Speed Test',
       description: 'Interactive typing speed testing application',
       tech: 'React, CSS',
-      live: '#',
-      frontend: '#',
+      live: 'https://typing-speed-sigma-eight.vercel.app/',
+      frontend: 'https://github.com/Ekram70/typing-speed',
     },
     {
       name: 'Classroom Writers',
       description: 'Educational platform for writers',
       tech: 'NextJs, Mantine, Tanstack Query, Framer Motion, Tailwind, Github Collaboration',
-      live: '#',
-      frontend: '#',
+      live: 'https://classroomwriters.com/',
+      frontend: 'https://github.com/RizwanSuvo99/verse-voice',
     },
     {
       name: 'Custom Block Editor',
       description: 'Rich text block editor component',
       tech: 'React, Mantine, Axios, Tailwind',
-      live: '#',
-      frontend: '#',
+      live: 'https://custom-block-editor.vercel.app/',
+      frontend: 'https://github.com/Ekram70/custom_block_editor',
     },
   ];
 
@@ -92,6 +92,7 @@ export default function Home() {
       company: 'ThemeXpert',
       position: 'Front-End Developer (ThriveDesk)',
       period: 'Nov, 2024 - till',
+      website: 'https://www.thrivedesk.com/',
       achievements: [
         'Upgraded the entire codebase from Angular 15 to Angular 18, improving build speed by 50%.',
         'Developed and maintained 70+ end-to-end (E2E) tests using Cypress, reducing critical bugs in production by 5%.',
@@ -111,6 +112,7 @@ export default function Home() {
     {
       name: 'Think in a Redux Way',
       provider: 'Learn With Sumit',
+      link: 'https://learnwithsumit.com/certificates/verify/LWSCTXN-10IXRH7R',
     },
     {
       name: 'Reactive Accelerator',
@@ -191,17 +193,27 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-wrap gap-4 justify-center">
-            <Button size="lg" className="gap-2">
-              <Mail className="h-4 w-4" />
-              Get In Touch
+            <Button size="lg" className="gap-2" asChild>
+              <a href="mailto:ekramullah70@gmail.com">
+                <Mail className="h-4 w-4" />
+                Get In Touch
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="gap-2">
-              <ExternalLink className="h-4 w-4" />
-              View Projects
+            <Button variant="outline" size="lg" className="gap-2" asChild>
+              <a href="#projects">
+                <ExternalLink className="h-4 w-4" />
+                View Projects
+              </a>
             </Button>
-            <Button variant="ghost" size="lg" className="gap-2">
-              <Github className="h-4 w-4" />
-              GitHub
+            <Button variant="ghost" size="lg" className="gap-2" asChild>
+              <a
+                href="https://github.com/ekram70"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="h-4 w-4" />
+                GitHub
+              </a>
             </Button>
           </div>
         </div>
@@ -359,20 +371,53 @@ export default function Home() {
                     <strong>Technology:</strong> {project.tech}
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Button size="sm" variant="outline" className="gap-2">
-                      <ExternalLink className="h-3 w-3" />
-                      Live
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="gap-2"
+                      asChild
+                    >
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <ExternalLink className="h-3 w-3" />
+                        Live
+                      </a>
                     </Button>
                     {project.frontend && (
-                      <Button size="sm" variant="ghost" className="gap-2">
-                        <Code className="h-3 w-3" />
-                        Front-end
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="gap-2"
+                        asChild
+                      >
+                        <a
+                          href={project.frontend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Code className="h-3 w-3" />
+                          Front-end
+                        </a>
                       </Button>
                     )}
                     {project.backend && (
-                      <Button size="sm" variant="ghost" className="gap-2">
-                        <Database className="h-3 w-3" />
-                        Back-end
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        className="gap-2"
+                        asChild
+                      >
+                        <a
+                          href={project.backend}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Database className="h-3 w-3" />
+                          Back-end
+                        </a>
                       </Button>
                     )}
                   </div>
@@ -401,8 +446,24 @@ export default function Home() {
                       <Briefcase className="h-5 w-5 text-primary" />
                       {job.position}
                     </CardTitle>
-                    <CardDescription className="text-lg font-medium">
+                    <CardDescription className="text-lg font-medium flex items-center gap-2">
                       {job.company}
+                      {job.website && (
+                        <Button
+                          size="sm"
+                          variant="ghost"
+                          className="p-1 h-auto"
+                          asChild
+                        >
+                          <a
+                            href={job.website}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-3 w-3" />
+                          </a>
+                        </Button>
+                      )}
                     </CardDescription>
                   </div>
                   <div className="flex items-center gap-2 text-muted-foreground">
@@ -467,7 +528,25 @@ export default function Home() {
                 <div className="space-y-3">
                   {certifications.map((cert, index) => (
                     <div key={index}>
-                      <h3 className="font-semibold">{cert.name}</h3>
+                      <h3 className="font-semibold flex items-center gap-2">
+                        {cert.name}
+                        {cert.link && (
+                          <Button
+                            size="sm"
+                            variant="ghost"
+                            className="p-1 h-auto"
+                            asChild
+                          >
+                            <a
+                              href={cert.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <ExternalLink className="h-3 w-3" />
+                            </a>
+                          </Button>
+                        )}
+                      </h3>
                       <p className="text-muted-foreground text-sm">
                         {cert.provider}
                       </p>
@@ -492,21 +571,41 @@ export default function Home() {
             projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="gap-2">
-              <Mail className="h-4 w-4" />
-              Email Me
+            <Button size="lg" className="gap-2" asChild>
+              <a href="mailto:ekramullah70@gmail.com">
+                <Mail className="h-4 w-4" />
+                Email Me
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="gap-2">
-              <Github className="h-4 w-4" />
-              GitHub
+            <Button variant="outline" size="lg" className="gap-2" asChild>
+              <a
+                href="https://github.com/ekram70"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Github className="h-4 w-4" />
+                GitHub
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="gap-2">
-              <ExternalLink className="h-4 w-4" />
-              Codewars
+            <Button variant="outline" size="lg" className="gap-2" asChild>
+              <a
+                href="https://www.codewars.com/users/Ekram70"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Codewars
+              </a>
             </Button>
-            <Button variant="outline" size="lg" className="gap-2">
-              <ExternalLink className="h-4 w-4" />
-              Leetcode
+            <Button variant="outline" size="lg" className="gap-2" asChild>
+              <a
+                href="https://leetcode.com/u/ekram70/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ExternalLink className="h-4 w-4" />
+                Leetcode
+              </a>
             </Button>
           </div>
         </div>
