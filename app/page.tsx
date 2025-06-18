@@ -11,7 +11,6 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   ArrowDown,
   Award,
@@ -277,170 +276,128 @@ export default function Home() {
             <Separator className="w-20 mx-auto" />
           </div>
 
-          <Tabs defaultValue="frontend" className="w-full">
-            <TabsList className="grid w-full grid-cols-5 mb-8 bg-slate-800/50">
-              <TabsTrigger
-                value="languages"
-                className="data-[state=active]:bg-yellow-500/20 data-[state=active]:text-yellow-400"
-              >
-                Languages
-              </TabsTrigger>
-              <TabsTrigger
-                value="frontend"
-                className="data-[state=active]:bg-blue-500/20 data-[state=active]:text-blue-400"
-              >
-                Frontend
-              </TabsTrigger>
-              <TabsTrigger
-                value="backend"
-                className="data-[state=active]:bg-green-500/20 data-[state=active]:text-green-400"
-              >
-                Backend
-              </TabsTrigger>
-              <TabsTrigger
-                value="tools"
-                className="data-[state=active]:bg-purple-500/20 data-[state=active]:text-purple-400"
-              >
-                Tools
-              </TabsTrigger>
-              <TabsTrigger
-                value="design"
-                className="data-[state=active]:bg-pink-500/20 data-[state=active]:text-pink-400"
-              >
-                Design
-              </TabsTrigger>
-            </TabsList>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Languages Card */}
+            <Card className="bg-slate-800/50 border-slate-700/50 hover:shadow-lg hover:shadow-yellow-500/10 transition-all duration-300">
+              <CardHeader className="flex flex-row items-center space-y-0 pb-3">
+                <div className="p-2 bg-yellow-500 rounded-lg mr-3">
+                  <Code className="h-4 w-4 text-slate-900" />
+                </div>
+                <CardTitle className="text-lg text-yellow-400">
+                  Languages
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.languages.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="border-yellow-500/30 text-yellow-400 hover:bg-yellow-500/10 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
 
-            <TabsContent value="languages" className="mt-0">
-              <Card className="bg-slate-800/50 border-slate-700/50">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                  <div className="p-2 bg-yellow-500 rounded-lg mr-3">
-                    <Code className="h-5 w-5 text-slate-900" />
-                  </div>
-                  <CardTitle className="text-xl text-yellow-400">
-                    Brain Languages
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.languages.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-yellow-500/30 text-yellow-400 hover:bg-yellow-500/10"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
+            {/* Frontend Card */}
+            <Card className="bg-slate-800/50 border-slate-700/50 hover:shadow-lg hover:shadow-blue-500/10 transition-all duration-300">
+              <CardHeader className="flex flex-row items-center space-y-0 pb-3">
+                <div className="p-2 bg-blue-500 rounded-lg mr-3">
+                  <Code className="h-4 w-4 text-slate-900" />
+                </div>
+                <CardTitle className="text-lg text-blue-400">
+                  Frontend
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.frontend.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
 
-            <TabsContent value="frontend" className="mt-0">
-              <Card className="bg-slate-800/50 border-slate-700/50">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                  <div className="p-2 bg-blue-500 rounded-lg mr-3">
-                    <Code className="h-5 w-5 text-slate-900" />
-                  </div>
-                  <CardTitle className="text-xl text-blue-400">
-                    Pixel Perfection
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.frontend.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-blue-500/30 text-blue-400 hover:bg-blue-500/10"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
+            {/* Backend Card */}
+            <Card className="bg-slate-800/50 border-slate-700/50 hover:shadow-lg hover:shadow-green-500/10 transition-all duration-300">
+              <CardHeader className="flex flex-row items-center space-y-0 pb-3">
+                <div className="p-2 bg-green-500 rounded-lg mr-3">
+                  <Database className="h-4 w-4 text-slate-900" />
+                </div>
+                <CardTitle className="text-lg text-green-400">
+                  Backend
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.backend.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="border-green-500/30 text-green-400 hover:bg-green-500/10 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
 
-            <TabsContent value="backend" className="mt-0">
-              <Card className="bg-slate-800/50 border-slate-700/50">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                  <div className="p-2 bg-green-500 rounded-lg mr-3">
-                    <Database className="h-5 w-5 text-slate-900" />
-                  </div>
-                  <CardTitle className="text-xl text-green-400">
-                    Server Sorcery
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.backend.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-green-500/30 text-green-400 hover:bg-green-500/10"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
+            {/* Tools Card */}
+            <Card className="bg-slate-800/50 border-slate-700/50 hover:shadow-lg hover:shadow-purple-500/10 transition-all duration-300">
+              <CardHeader className="flex flex-row items-center space-y-0 pb-3">
+                <div className="p-2 bg-purple-500 rounded-lg mr-3">
+                  <Wrench className="h-4 w-4 text-slate-900" />
+                </div>
+                <CardTitle className="text-lg text-purple-400">Tools</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.tools.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="border-purple-500/30 text-purple-400 hover:bg-purple-500/10 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
 
-            <TabsContent value="tools" className="mt-0">
-              <Card className="bg-slate-800/50 border-slate-700/50">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                  <div className="p-2 bg-purple-500 rounded-lg mr-3">
-                    <Wrench className="h-5 w-5 text-slate-900" />
-                  </div>
-                  <CardTitle className="text-xl text-purple-400">
-                    Productivity Potions
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.tools.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-purple-500/30 text-purple-400 hover:bg-purple-500/10"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-
-            <TabsContent value="design" className="mt-0">
-              <Card className="bg-slate-800/50 border-slate-700/50">
-                <CardHeader className="flex flex-row items-center space-y-0 pb-4">
-                  <div className="p-2 bg-pink-500 rounded-lg mr-3">
-                    <Palette className="h-5 w-5 text-slate-900" />
-                  </div>
-                  <CardTitle className="text-xl text-pink-400">
-                    Visual Voodoo
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <div className="flex flex-wrap gap-3">
-                    {skills.design.map((skill) => (
-                      <Badge
-                        key={skill}
-                        variant="outline"
-                        className="border-pink-500/30 text-pink-400 hover:bg-pink-500/10"
-                      >
-                        {skill}
-                      </Badge>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </TabsContent>
-          </Tabs>
+            {/* Design Card */}
+            <Card className="bg-slate-800/50 border-slate-700/50 hover:shadow-lg hover:shadow-pink-500/10 transition-all duration-300 md:col-span-2 lg:col-span-1">
+              <CardHeader className="flex flex-row items-center space-y-0 pb-3">
+                <div className="p-2 bg-pink-500 rounded-lg mr-3">
+                  <Palette className="h-4 w-4 text-slate-900" />
+                </div>
+                <CardTitle className="text-lg text-pink-400">Design</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  {skills.design.map((skill) => (
+                    <Badge
+                      key={skill}
+                      variant="outline"
+                      className="border-pink-500/30 text-pink-400 hover:bg-pink-500/10 text-xs"
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </section>
 
@@ -859,10 +816,6 @@ export default function Home() {
             <div className="text-center md:text-right">
               <p className="text-slate-400 mb-1 text-sm">
                 &copy; 2024 Md. Ekram Ullah. All rights reserved.
-              </p>
-              <p className="text-slate-500 text-sm">
-                Built with Next.js & Tailwind CSS (and an unhealthy amount of
-                caffeine)
               </p>
             </div>
           </div>
