@@ -548,7 +548,7 @@ export default function Home() {
                   {job.achievements.map((achievement, achievementIndex) => (
                     <div
                       key={achievementIndex}
-                      className="flex items-start gap-3 p-4 rounded-lg bg-slate-700/30 hover:bg-slate-700/50 transition-colors duration-200 border border-slate-600/30"
+                      className="flex items-start gap-3"
                     >
                       <div className="flex-shrink-0 mt-2">
                         <div className="h-2 w-2 rounded-full bg-gradient-to-r from-emerald-400 to-blue-400" />
