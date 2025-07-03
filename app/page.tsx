@@ -32,19 +32,23 @@ import {
 
 export default function Home() {
   const skills = {
-    languages: ['JavaScript', 'TypeScript'],
+    languages: ['JavaScript', 'TypeScript', 'Java', 'Python'],
     backend: ['Node', 'Express', 'MongoDB', 'REST API Design'],
     frontend: [
+      'Angular',
+      'PrimeNG',
+      'RxJS',
       'React',
       'Next.js',
       'Redux',
-      'Tailwind',
-      'Shadcn UI',
+      'Shadcn',
       'Mantine',
       'Material UI',
       'Ant Design',
     ],
     tools: [
+      'JEST',
+      'Cypress',
       'Websocket',
       'Tanstack Query',
       'Authentication',
