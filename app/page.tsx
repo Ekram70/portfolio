@@ -169,6 +169,11 @@ export default function Home() {
               <Button variant="ghost" size="sm" asChild>
                 <a href="#contact">Contact</a>
               </Button>
+              <Button size="sm" asChild>
+                <a href="https://ekram70.hashnode.dev/" target="_blank">
+                  Blog
+                </a>
+              </Button>
             </div>
           </nav>
         </div>
