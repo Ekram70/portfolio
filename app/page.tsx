@@ -104,7 +104,7 @@ export default function Home() {
   const workExperience = [
     {
       company: 'ThemeXpert',
-      position: 'Front-End Developer (ThriveDesk)',
+      position: 'Jr. Full Stack Developer (ThriveDesk)',
       period: 'Nov, 2024 - till',
       website: 'https://www.thrivedesk.com/',
       achievements: [
