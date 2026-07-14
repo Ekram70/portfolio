@@ -242,6 +242,36 @@ body::after {
   animation: marquee-reverse 32s linear infinite;
 }
 
+/* Staggered entrance reveal */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.reveal {
+  animation: reveal 0.6s both;
+}
+
+/* Blinking text caret (typewriter + code editor) */
+@keyframes caret {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+.animate-caret {
+  animation: caret 1s step-end infinite;
+}
+
 /* Marquee — seamless horizontal scroll of a duplicated track */
 @keyframes marquee {
   from {

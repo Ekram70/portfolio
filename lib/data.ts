@@ -7,6 +7,8 @@ export const profile = {
   email: 'ekramullah70@gmail.com',
   blog: 'https://ekram70.hashnode.dev/',
   github: 'https://github.com/ekram70',
+  available: true,
+  availabilityLabel: 'Available for work',
 };
 
 export const navLinks = [
@@ -21,8 +23,21 @@ export const heroCopy = {
   kicker: 'Frontend Developer',
   badge: 'Currently accepting bribes in form of exciting projects',
   title: 'Code Whisperer & Bug Slayer',
+  titleLead: 'Code Whisperer',
+  roles: [
+    'Bug Slayer',
+    'Pixel Perfectionist',
+    'React Wizard',
+    'Coffee → Code Converter',
+  ],
   lead: "I turn coffee into code and dreams into pixels. A passionate Frontend Developer who speaks fluent JavaScript, TypeScript, and React.js (and occasionally talks to browsers when they misbehave)",
 };
+
+export const heroStats: { value: string; label: string }[] = [
+  { value: '1.5+', label: 'Years experience' },
+  { value: '5+', label: 'Projects shipped' },
+  { value: '70+', label: 'E2E tests written' },
+];
 
 export const aboutCopy = {
   kicker: 'About',
