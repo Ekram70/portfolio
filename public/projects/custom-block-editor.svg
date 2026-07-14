@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="900" viewBox="0 0 1440 900" fill="none" role="img" aria-label="Custom Block Editor preview">
+  <defs>
+    <pattern id="dots-cbe" width="26" height="26" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#201d1a" opacity="0.06"/>
+    </pattern>
+  </defs>
+  <rect width="1440" height="900" fill="#fbf7ef"/>
+  <rect width="1440" height="900" fill="url(#dots-cbe)"/>
+  <rect x="120" y="150" width="1200" height="600" rx="18" fill="#ffffff" stroke="#e7e0d4" stroke-width="2"/>
+  <rect x="120" y="150" width="1200" height="72" rx="18" fill="#f7f1e6"/>
+  <rect x="120" y="204" width="1200" height="18" fill="#f7f1e6"/>
+  <circle cx="162" cy="186" r="8" fill="#ff4800"/>
+  <circle cx="192" cy="186" r="8" fill="#e7e0d4"/>
+  <circle cx="222" cy="186" r="8" fill="#e7e0d4"/>
+  <rect x="300" y="172" width="620" height="28" rx="14" fill="#fbf7ef"/>
+  <text x="330" y="191" font-family="ui-monospace, monospace" font-size="16" fill="#8a8178">custom-block-editor.vercel.app</text>
+
+  <rect x="180" y="290" width="120" height="24" rx="12" fill="#ff4800" opacity="0.15"/>
+  <text x="184" y="307" font-family="ui-monospace, monospace" font-size="13" letter-spacing="2" fill="#ff4800">EDITOR</text>
+  <text x="180" y="400" font-family="'Instrument Sans', system-ui, sans-serif" font-size="70" font-weight="800" fill="#201d1a" letter-spacing="-2">Custom Block</text>
+  <text x="180" y="478" font-family="'Instrument Sans', system-ui, sans-serif" font-size="70" font-weight="800" fill="#ff4800" letter-spacing="-2">Editor</text>
+
+  <!-- stylized editor blocks -->
+  <g>
+    <rect x="820" y="300" width="440" height="60" rx="10" fill="#f7f1e6"/>
+    <rect x="844" y="322" width="16" height="16" rx="4" fill="#ff4800"/>
+    <rect x="880" y="322" width="300" height="16" rx="8" fill="#d9d1c3"/>
+    <rect x="820" y="378" width="440" height="60" rx="10" fill="#f7f1e6"/>
+    <rect x="844" y="400" width="16" height="16" rx="4" fill="#d9d1c3"/>
+    <rect x="880" y="400" width="240" height="16" rx="8" fill="#d9d1c3"/>
+    <rect x="820" y="456" width="440" height="60" rx="10" fill="#f7f1e6"/>
+    <rect x="844" y="478" width="16" height="16" rx="4" fill="#d9d1c3"/>
+    <rect x="880" y="478" width="330" height="16" rx="8" fill="#d9d1c3"/>
+    <rect x="820" y="534" width="200" height="44" rx="10" fill="#ff4800"/>
+    <text x="920" y="562" text-anchor="middle" font-family="'Instrument Sans', system-ui, sans-serif" font-size="16" font-weight="600" fill="#ffffff">+ Add Block</text>
+  </g>
+</svg>

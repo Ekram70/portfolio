@@ -1,12 +1,18 @@
-import type { Metadata } from 'next';
-import { Figtree } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
+import { Instrument_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
-const figtree = Figtree({
-  variable: '--font-figtree',
+const instrumentSans = Instrument_Sans({
+  variable: '--font-sans',
   subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700', '800', '900'],
-  style: ['normal', 'italic'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  variable: '--font-mono',
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
   display: 'swap',
 });
 
@@ -41,8 +47,12 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/manifest.json',
-  viewport: 'width=device-width, initial-scale=1',
   robots: 'index, follow',
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -52,7 +62,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${figtree.variable} antialiased font-sans`}>
+      <body
+        className={`${instrumentSans.variable} ${jetbrainsMono.variable} antialiased font-sans`}
+      >
         {children}
       </body>
     </html>
