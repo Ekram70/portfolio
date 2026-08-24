@@ -25,7 +25,7 @@ const P = ({ children }: { children: React.ReactNode }) => (
 );
 
 const lines: React.ReactNode[] = [
-  <C key="l0">{'// the human behind the pixels'}</C>,
+  <C key="l0">{'// the human behind the commits'}</C>,
   <span key="l1">
     <K>const</K> developer <P>=</P> <P>{'{'}</P>
   </span>,
@@ -38,10 +38,18 @@ const lines: React.ReactNode[] = [
     <P>,</P>
   </span>,
   <span key="l4">
-    {'  '}stack<P>:</P> <P>[</P>
+    {'  '}frontend<P>:</P> <P>[</P>
     <S>&apos;Angular&apos;</S>
     <P>,</P> <S>&apos;React&apos;</S>
     <P>,</P> <S>&apos;TS&apos;</S>
+    <P>]</P>
+    <P>,</P>
+  </span>,
+  <span key="l4b">
+    {'  '}backend<P>:</P> <P>[</P>
+    <S>&apos;NestJS&apos;</S>
+    <P>,</P> <S>&apos;Laravel&apos;</S>
+    <P>,</P> <S>&apos;MySQL&apos;</S>
     <P>]</P>
     <P>,</P>
   </span>,

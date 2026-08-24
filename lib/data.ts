@@ -27,11 +27,12 @@ export const heroCopy = {
   titleLead: 'Code Whisperer',
   roles: [
     'Bug Slayer',
-    'Pixel Perfectionist',
     'Angular Wizard',
+    'API Plumber',
+    'Pixel Perfectionist',
     'Coffee → Code Converter',
   ],
-  lead: "I turn coffee into code and vague requirements into shipped features. A Full Stack Developer who speaks fluent Angular, TypeScript, and React — and owns features end to end, from the client conversation to the production release (and occasionally talks to browsers when they misbehave)",
+  lead: "I turn coffee into code and vague requirements into shipped features. A Full Stack Developer who lives in Angular and TypeScript on the front, Node, NestJS and Laravel on the back — and owns the whole path between them, from the client conversation to the production release (and occasionally talks to browsers when they misbehave)",
 };
 
 export const heroStats: { value: string; label: string }[] = [
@@ -195,7 +196,7 @@ export const howIWork: Step[] = [
   {
     no: '02',
     title: 'Align, then build',
-    body: 'I present the plan to the team and absorb the feedback before implementing — the cheapest bugs are the ones argued out of existence in a meeting. Then I craft accessible, scalable interfaces with reusable components and clean state.',
+    body: 'I present the plan to the team and absorb the feedback before implementing — the cheapest bugs are the ones argued out of existence in a meeting. Then I build it across the stack: a sane data shape, an API contract that reads the way it behaves, and an accessible, scalable interface sitting on top of it.',
   },
   {
     no: '03',
@@ -290,7 +291,7 @@ export const certifications: Certification[] = [
 export const contactCopy = {
   kicker: 'Contact',
   title: "Let's Build Something Epic Together",
-  lead: "Got a project that needs some digital magic? I'm always excited to discuss new adventures in the land of pixels and code.",
+  lead: "Got a project that needs some digital magic? I'm always excited to discuss new adventures in the land of clean APIs and sharp interfaces.",
   ctaTitle: 'Ready to create some digital magic?',
   ctaBody:
     "I'm currently available for freelance adventures and full-time quests. Warning: Side effects may include exceptional user experiences.",

@@ -19,7 +19,7 @@ function ProjectLinks({ project }: { project: Project }) {
         <Button size="sm" variant="outline" asChild>
           <a href={project.frontend} target="_blank" rel="noopener noreferrer">
             <Code />
-            Frontend
+            {project.backend ? 'Frontend' : 'Source'}
           </a>
         </Button>
       )}
@@ -84,7 +84,7 @@ export function Projects() {
       <SectionHeading
         kicker="Projects"
         title="Digital Creations That Actually Work"
-        lead="A selection of things I've designed, built, and shipped."
+        lead="A selection of things I've designed, built, and shipped — front to back."
       />
 
       {/* Featured project — alternating image / text block */}

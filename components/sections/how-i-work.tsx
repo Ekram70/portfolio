@@ -11,8 +11,8 @@ export function HowIWork() {
     <Section id="approach" tint pattern="grid" glow="tr">
       <SectionHeading
         kicker="Approach"
-        title="How I Turn Ideas Into Interfaces"
-        lead="A simple loop that keeps the work honest, the code clean, and the users happy."
+        title="How I Turn Ideas Into Shipped Software"
+        lead="One loop, applied from the data model up to the last pixel — it keeps the work honest, the code clean, and the users happy."
       />
       <div className="grid gap-4 md:grid-cols-3">
         {howIWork.map((step, i) => {

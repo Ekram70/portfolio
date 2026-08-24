@@ -30,7 +30,7 @@ export function Skills() {
       <SectionHeading
         kicker="Skills"
         title="My Arsenal of Digital Wizardry"
-        lead="The tools, languages, and frameworks I reach for to ship reliable, polished interfaces."
+        lead="The tools, languages, and frameworks I reach for across the stack — database and API through to the interface."
       />
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group) => {
