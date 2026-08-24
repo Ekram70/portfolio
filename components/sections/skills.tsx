@@ -3,6 +3,8 @@ import {
   Layers,
   PenTool,
   Server,
+  Sparkles,
+  TestTube2,
   Wrench,
   type LucideIcon,
 } from 'lucide-react';
@@ -16,8 +18,10 @@ const groupIcons: Record<string, LucideIcon> = {
   Languages: Code2,
   Frontend: Layers,
   Backend: Server,
+  Testing: TestTube2,
   Tools: Wrench,
   Design: PenTool,
+  Familiar: Sparkles,
 };
 
 export function Skills() {

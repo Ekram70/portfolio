@@ -34,13 +34,13 @@ const lines: React.ReactNode[] = [
     <P>,</P>
   </span>,
   <span key="l3">
-    {'  '}role<P>:</P> <S>&apos;Frontend Developer&apos;</S>
+    {'  '}role<P>:</P> <S>&apos;Full Stack Developer&apos;</S>
     <P>,</P>
   </span>,
   <span key="l4">
     {'  '}stack<P>:</P> <P>[</P>
-    <S>&apos;React&apos;</S>
-    <P>,</P> <S>&apos;Next.js&apos;</S>
+    <S>&apos;Angular&apos;</S>
+    <P>,</P> <S>&apos;React&apos;</S>
     <P>,</P> <S>&apos;TS&apos;</S>
     <P>]</P>
     <P>,</P>
@@ -71,7 +71,7 @@ const lines: React.ReactNode[] = [
 
 const terminalLines = [
   { text: '$ npm run dev', className: 'text-white/80' },
-  { text: '▲ Next.js 15.3.3  (turbopack)', className: 'text-white/60' },
+  { text: '▲ Next.js 15.5.23  (turbopack)', className: 'text-white/60' },
   { text: '✓ Ready in 912ms', className: 'text-green-400' },
   { text: '○ Local:  http://localhost:3000', className: 'text-white/60' },
 ];

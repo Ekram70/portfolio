@@ -17,25 +17,25 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Md. Ekram Ullah - Frontend Developer',
+  title: 'Md. Ekram Ullah - Full Stack Developer',
   description:
-    'Passionate Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies. Building scalable, user-centric interfaces.',
+    'Full Stack Developer specializing in Angular, TypeScript, React and Next.js, with NestJS, Laravel and MySQL on the backend. I own features end to end — requirements, design, implementation, tests, and release.',
   keywords:
-    'Frontend Developer, React, Next.js, TypeScript, JavaScript, Web Development, UI/UX, Portfolio',
+    'Full Stack Developer, Angular, TypeScript, React, Next.js, NestJS, Laravel, MySQL, Playwright, Vitest, Web Development, Portfolio',
   authors: [{ name: 'Md. Ekram Ullah' }],
   creator: 'Md. Ekram Ullah',
   openGraph: {
-    title: 'Md. Ekram Ullah - Frontend Developer',
+    title: 'Md. Ekram Ullah - Full Stack Developer',
     description:
-      'Passionate Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies.',
+      'Full Stack Developer specializing in Angular, TypeScript and React — owning features end to end, from requirements to release.',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Md. Ekram Ullah - Frontend Developer',
+    title: 'Md. Ekram Ullah - Full Stack Developer',
     description:
-      'Passionate Frontend Developer specializing in React, Next.js, TypeScript, and modern web technologies.',
+      'Full Stack Developer specializing in Angular, TypeScript and React — owning features end to end, from requirements to release.',
   },
   icons: {
     icon: [

@@ -1,8 +1,8 @@
-import { Gauge, Network, Rocket, TestTube2, type LucideIcon } from 'lucide-react';
+import { Gauge, Layers, Network, Rocket, type LucideIcon } from 'lucide-react';
 
 import { stats } from '@/lib/data';
 
-const icons: LucideIcon[] = [Rocket, TestTube2, Network, Gauge];
+const icons: LucideIcon[] = [Rocket, Layers, Network, Gauge];
 
 export function Stats() {
   return (

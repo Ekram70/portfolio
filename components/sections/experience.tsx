@@ -1,4 +1,4 @@
-import { Briefcase, Calendar, ExternalLink } from 'lucide-react';
+import { Briefcase, Calendar, ExternalLink, Star } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
 import {
@@ -42,10 +42,18 @@ export function Experience() {
                     )}
                   </CardDescription>
                 </div>
-                <Badge variant="secondary">
-                  <Calendar className="size-3" />
-                  {job.period}
-                </Badge>
+                <div className="flex flex-col items-start gap-2 sm:items-end">
+                  <Badge variant="secondary">
+                    <Calendar className="size-3" />
+                    {job.period}
+                  </Badge>
+                  {job.award && (
+                    <Badge variant="accent">
+                      <Star className="size-3" />
+                      {job.award}
+                    </Badge>
+                  )}
+                </div>
               </div>
             </CardHeader>
             <CardContent>

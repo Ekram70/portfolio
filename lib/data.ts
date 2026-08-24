@@ -1,89 +1,107 @@
 export const profile = {
   name: 'Md. Ekram Ullah',
   initials: 'EU',
-  role: 'Frontend Developer',
-  location: 'Middle Badda, Dhaka',
+  role: 'Full Stack Developer',
+  location: 'Mohammadpur, Dhaka',
   phone: '+8801867-939463',
   email: 'ekramullah70@gmail.com',
   blog: 'https://ekram70.hashnode.dev/',
-  github: 'https://github.com/ekram70',
+  github: 'https://github.com/Ekram70',
+  linkedin: 'https://www.linkedin.com/in/ekramullah/',
   available: true,
   availabilityLabel: 'Available for work',
 };
 
 export const navLinks = [
-  { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Open Source', href: '#open-source' },
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
   { label: 'Contact', href: '#contact' },
 ];
 
 export const heroCopy = {
-  kicker: 'Frontend Developer',
-  badge: 'Currently accepting bribes in form of exciting projects',
+  kicker: 'Full Stack Developer',
+  badge: 'Star of the Year 2025 · ThemeXpert',
   title: 'Code Whisperer & Bug Slayer',
   titleLead: 'Code Whisperer',
   roles: [
     'Bug Slayer',
     'Pixel Perfectionist',
-    'React Wizard',
+    'Angular Wizard',
     'Coffee → Code Converter',
   ],
-  lead: "I turn coffee into code and dreams into pixels. A passionate Frontend Developer who speaks fluent JavaScript, TypeScript, and React.js (and occasionally talks to browsers when they misbehave)",
+  lead: "I turn coffee into code and vague requirements into shipped features. A Full Stack Developer who speaks fluent Angular, TypeScript, and React — and owns features end to end, from the client conversation to the production release (and occasionally talks to browsers when they misbehave)",
 };
 
 export const heroStats: { value: string; label: string }[] = [
-  { value: '1.5+', label: 'Years experience' },
+  { value: '370+', label: 'Pull requests' },
+  { value: '900+', label: 'Tests written' },
   { value: '5+', label: 'Projects shipped' },
-  { value: '70+', label: 'E2E tests written' },
 ];
-
-export const aboutCopy = {
-  kicker: 'About',
-  title: 'My Quest to Conquer the Digital Realm',
-  body: "On a mission to build digital experiences that don't make users want to throw their computers out the window. I craft scalable, user-centric interfaces with the precision of a Swiss watchmaker and the creativity of a caffeinated artist. My goal? To join forces with brilliant minds who believe that great software is built by humans, for humans - and maybe teach a few machines some manners along the way.",
-};
 
 export const skillGroups: { label: string; items: string[] }[] = [
   {
     label: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Java', 'Python'],
+    items: ['JavaScript', 'TypeScript', 'PHP', 'Python', 'Java'],
   },
   {
     label: 'Frontend',
     items: [
       'Angular',
-      'PrimeNG',
+      'Signals',
       'RxJS',
+      'PrimeNG',
       'React',
       'Next.js',
       'Redux',
+      'Tanstack Query',
+      'Tailwind',
+      'Sass',
       'Shadcn',
       'Mantine',
-      'Material UI',
-      'Ant Design',
+      'Tiptap',
+      'Hashbrown',
     ],
   },
   {
     label: 'Backend',
-    items: ['Node', 'Express', 'MongoDB', 'REST API Design'],
+    items: [
+      'Node',
+      'Express',
+      'NestJS',
+      'Laravel',
+      'REST API Design',
+      'Websocket',
+      'MySQL',
+      'MongoDB',
+    ],
+  },
+  {
+    label: 'Testing',
+    items: ['Playwright', 'Vitest', 'Cypress', 'JEST'],
   },
   {
     label: 'Tools',
     items: [
-      'JEST',
-      'Cypress',
-      'Websocket',
-      'Tanstack Query',
-      'Authentication',
-      'Authorization',
-      'Puppeteer',
+      'Git',
+      'GitHub Actions',
+      'Docker',
+      'Linux',
+      'Sentry',
+      'Biome',
+      'ESLint/Prettier',
+      'Vite',
+      'Webpack',
     ],
   },
   {
     label: 'Design',
     items: ['Figma', 'Photoshop', 'Illustrator'],
+  },
+  {
+    label: 'Familiar',
+    items: ['Vue.js', 'Svelte'],
   },
 ];
 
@@ -156,8 +174,12 @@ export const projects: Project[] = [
 export type Stat = { value: string; label: string; sub: string };
 
 export const stats: Stat[] = [
-  { value: '50%', label: 'Faster build times', sub: 'Angular 15 → 18 upgrade' },
-  { value: '70+', label: 'E2E tests written', sub: 'Cypress coverage' },
+  { value: '50%', label: 'Faster build times', sub: 'Angular 15 → 21 upgrade' },
+  {
+    value: '750+',
+    label: 'Components migrated',
+    sub: 'Standalone + Signals',
+  },
   { value: '25%', label: 'Fewer API calls', sub: 'Response caching' },
   { value: '20%', label: 'Fewer re-renders', sub: 'Render optimization' },
 ];
@@ -168,17 +190,17 @@ export const howIWork: Step[] = [
   {
     no: '01',
     title: 'Understand deeply',
-    body: 'Before writing a line, I dig into the problem, the users, and the edge cases. Good code starts with good questions (and a suspicious amount of coffee).',
+    body: 'Before writing a line, I talk to the people with the problem — support requests, competitor research, and the edge cases nobody mentioned. Good code starts with good questions (and a suspicious amount of coffee).',
   },
   {
     no: '02',
-    title: 'Build for humans',
-    body: 'I craft accessible, scalable interfaces with reusable components and clean state. If a teammate can read it and a user can love it, I did my job.',
+    title: 'Align, then build',
+    body: 'I present the plan to the team and absorb the feedback before implementing — the cheapest bugs are the ones argued out of existence in a meeting. Then I craft accessible, scalable interfaces with reusable components and clean state.',
   },
   {
     no: '03',
     title: 'Ship & refine',
-    body: 'I test, review, measure, and optimize — cutting re-renders, caching responses, and squashing bugs until the experience feels effortless.',
+    body: 'I test, review, measure, and optimize — 900+ specs, cached responses, fewer re-renders, and observability that tells me something broke before a user does.',
   },
 ];
 
@@ -195,7 +217,11 @@ export const faqs: Faq[] = [
   },
   {
     q: 'What do you specialize in?',
-    a: 'Frontend engineering with React, Next.js, Angular, and TypeScript — plus enough Node/Express and testing to own features end to end.',
+    a: 'Full stack with an Angular-first core — Angular, TypeScript, React and Next.js on the front, NestJS, Laravel and MySQL on the back, plus enough Playwright and Vitest to trust my own work.',
+  },
+  {
+    q: 'What does “end to end” actually mean here?',
+    a: 'I sit in the client conversation, do the competitor and design research, present the plan to the team, build it, write the tests, review the PRs, and ship the release. Fewer handoffs, fewer things lost in translation.',
   },
   {
     q: 'How fast do you respond?',
@@ -203,51 +229,35 @@ export const faqs: Faq[] = [
   },
 ];
 
-/** Headline technologies for the marquee (curated from skillGroups). */
-export const techMarquee: string[] = [
-  'TypeScript',
-  'React',
-  'Next.js',
-  'Angular',
-  'Node',
-  'Express',
-  'MongoDB',
-  'Redux',
-  'RxJS',
-  'Tanstack Query',
-  'Tailwind',
-  'Cypress',
-  'JEST',
-  'Shadcn',
-  'Mantine',
-  'Figma',
-];
-
 export type Job = {
   company: string;
   position: string;
   period: string;
   website?: string;
+  award?: string;
   achievements: string[];
 };
 
 export const workExperience: Job[] = [
   {
     company: 'ThemeXpert',
-    position: 'Jr. Full Stack Developer (ThriveDesk)',
-    period: 'Nov, 2024 - till',
+    position: 'Full Stack Developer (ThriveDesk)',
+    period: 'Nov 2024 — Present',
     website: 'https://www.thrivedesk.com/',
+    award: 'Star of the Year 2025',
     achievements: [
-      'Upgraded the entire codebase from Angular 15 to Angular 18, improving build speed by 50% (and my coffee consumption by 200%).',
-      'Developed and maintained 70+ end-to-end (E2E) tests using Cypress, reducing critical bugs in production by 5% (bugs hate this one simple trick).',
-      'Integrated major third-party services like Paddle, Stripe, and GitHub (convinced them all to play nicely together).',
-      'Migrated components from Material UI to Ant Design, preserving all existing functionality (like a digital organ transplant, but less messy).',
-      'Reduced API call frequency by up to 25% through effective response caching (because APIs need their beauty sleep too).',
-      'Introduced 10+ reusable components and shared services, decreasing code duplication (DRY principle enforcer extraordinaire).',
-      'Worked on implementation of AI Copilot, AI Chatbot and AI Actions (teaching machines to be helpful, one algorithm at a time).',
-      'Contributed to features and bug fixes, and refactored legacy modules to align with modern best practices (code archaeology meets renovation).',
-      'Conducted daily PR reviews and contributed to project documentation (professional code critic and storyteller).',
-      'Optimized rendering logic in critical components, cutting unnecessary re-renders by 20% (performance optimization wizard).',
+      'Own features end to end — handle client support requests, dig out the underlying problem, and translate it into actionable requirements (turns out "it’s broken" is rarely the whole story).',
+      'Run competitor analysis and design research to shape how a feature should look and behave, then present the plan to the team and align on the approach before implementation.',
+      'Upgraded the entire codebase from Angular 15 to Angular 21, improving build speed by 50% and migrating 750+ components to standalone APIs and Signals (and my coffee consumption by 200%).',
+      'Rebuilt app-wide authorization on a backend-driven capability model with fail-closed route guards and live permission revocation over WebSocket — revoke a capability and the user is evicted from the route mid-session.',
+      'Migrated testing from Cypress/Karma to Playwright and Vitest, growing coverage to 900+ E2E and unit tests (bugs hate this one simple trick).',
+      'Implemented Sentry observability with source maps, distributed tracing, session replay, and user attribution — production errors went from unreadable minified noise to actionable reports.',
+      'Delivered core product features including Custom Fields, Custom Views, Schedule Reply, Snooze, Undo Send, Split Conversation, and Bulk Merge.',
+      'Contributed to AI Copilot, AI Chatbot, AI Playground, and AI Actions, plus a knowledge engine supporting web, file, and Q&A sources (teaching machines to be helpful, one algorithm at a time).',
+      'Reduced API call frequency by up to 25% through response caching and cut unnecessary re-renders by 20% through render optimization (because APIs need their beauty sleep too).',
+      'Integrated major third-party services like Paddle, Stripe, and GitHub, and migrated UI components from Material UI to PrimeNG (like a digital organ transplant, but less messy).',
+      'Designed reusable components and shared services, and authored the team’s design guideline and PR review template (DRY principle enforcer extraordinaire).',
+      'Conducted daily PR reviews, mentored new frontend onboards, and contributed to 370+ pull requests across the release cycle (professional code critic and storyteller).',
     ],
   },
 ];
@@ -286,10 +296,65 @@ export const contactCopy = {
     "I'm currently available for freelance adventures and full-time quests. Warning: Side effects may include exceptional user experiences.",
 };
 
+export type Contribution = {
+  number: number;
+  title: string;
+  href: string;
+  merged: string;
+  files: number;
+  commits: number;
+  highlights: string[];
+};
+
+export const openSource = {
+  kicker: 'Open Source',
+  title: 'Shipping Into Someone Else\u2019s Design System',
+  lead: 'Contributing to a public component library is the fastest way to find out whether your idea of "clean architecture" survives contact with other people\u2019s standards. Mine did \u2014 twice.',
+  project: {
+    name: 'ZardUi',
+    tagline: 'Open-source Angular component library',
+    description:
+      'An open-source Angular UI component library. I took on its Angular 20 migration and shipped a new component into its public API \u2014 both reviewed and merged by the maintainers.',
+    site: 'https://zardui.com/',
+    repo: 'https://github.com/zard-ui/zardui',
+  },
+  contributions: [
+    {
+      number: 200,
+      title: 'Migrate the library to Angular 20',
+      href: 'https://github.com/zard-ui/zardui/pull/200',
+      merged: 'Sep 2025',
+      files: 179,
+      commits: 12,
+      highlights: [
+        'Analysed the Angular 20 breaking changes and upgraded the core dependency tree',
+        'Migrated deprecated APIs and updated every affected component implementation',
+        'Brought the tests and documentation along with it, then verified feature parity',
+        'Closed the maintainers\u2019 open migration issue (#183)',
+      ],
+    },
+    {
+      number: 224,
+      title: 'Add the Empty component',
+      href: 'https://github.com/zard-ui/zardui/pull/224',
+      merged: 'Oct 2025',
+      files: 33,
+      commits: 20,
+      highlights: [
+        'Designed a typed public API \u2014 zImage, zDescription and a default/sm/lg size variant',
+        'Accepts both plain strings and TemplateRef, so consumers can pass markup or text',
+        'Shipped with a default illustration, dark mode, and responsive layout',
+        'Accessible by default, and consistent with the library\u2019s existing design tokens',
+      ],
+    },
+  ] as Contribution[],
+};
+
 export type SocialLink = { label: string; href: string };
 
 export const socialLinks: SocialLink[] = [
-  { label: 'GitHub', href: 'https://github.com/ekram70' },
+  { label: 'GitHub', href: 'https://github.com/Ekram70' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/in/ekramullah/' },
   { label: 'Codewars', href: 'https://www.codewars.com/users/Ekram70' },
   { label: 'Leetcode', href: 'https://leetcode.com/u/ekram70/' },
 ];

@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Mail, Phone } from 'lucide-react';
+import { ExternalLink, Github, Linkedin, Mail, Phone } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -7,7 +7,9 @@ import { Section, SectionHeading } from '@/components/ui/section';
 import { contactCopy, profile, socialLinks } from '@/lib/data';
 
 function socialIcon(label: string) {
-  return label === 'GitHub' ? <Github /> : <ExternalLink />;
+  if (label === 'GitHub') return <Github />;
+  if (label === 'LinkedIn') return <Linkedin />;
+  return <ExternalLink />;
 }
 
 export function Contact() {
